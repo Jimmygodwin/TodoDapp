@@ -1,6 +1,7 @@
 import './App.css';
 import Web3 from 'web3';
 import { Component } from 'react';
+import Navbar from './component/navbar';
 
 
 class App extends Component{
@@ -24,9 +25,13 @@ class App extends Component{
 
   render() {
     return (
-      <div className="container">
-        <h2>To-do Dapp</h2>
-        <p>Your account: {this.state.account} </p>
+      <div>
+        <Navbar />
+        <div className="container">
+          <h2>A simple To Do Decentralized Application on Etheruem network</h2>
+          <p>Your account: {this.state.account} </p>
+        </div>
+        
   
       </div>
     );
